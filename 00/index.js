@@ -1,17 +1,17 @@
-import { createMachine } from 'xstate';
+import { createMachine } from "xstate";
 
-const elOutput = document.querySelector('#output');
+const elOutput = document.querySelector("#output");
 
 function output(object) {
   elOutput.innerHTML = JSON.stringify(user, null, 2);
 }
 
-console.log('Welcome to the XState workshop!');
+console.log("Welcome to the XState workshop!");
 
 const user = {
-  name: 'David Khourshid',
-  company: 'Microsoft',
-  interests: ['piano', 'state machines'],
+  name: "David Khourshid",
+  company: "Microsoft",
+  interests: ["piano", "state machines"],
 };
 
 output(user);
